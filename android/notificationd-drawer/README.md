@@ -13,3 +13,11 @@ A notification can appears to users in different locations and formats:
 - Lock screen
 - App icon badge
 - Wear OS device
+
+## Simple notification
+
+## Status Bar
+<img src="https://github.com/lemarcque/software-skills/blob/master/android/notificationd-drawer/ressource/img/status_bar.png?raw=true" alt="alt text" width="400">
+
+## Navigation Drawer
+<img src="https://github.com/lemarcque/software-skills/blob/master/android/notificationd-drawer/ressource/img/navigation-drawer.png?raw=true" alt="alt text" width="400">
