@@ -21,3 +21,11 @@ A notification can appears to users in different locations and formats:
 
 ## Navigation Drawer
 <img src="https://github.com/lemarcque/software-skills/blob/master/android/notificationd-drawer/ressource/img/navigation-drawer.png?raw=true" alt="alt text" width="400">
+
+# Code
+You need to add the dependencies of the support library in the file `build.gradle` like below:
+```
+dependencies {
+    implementation ‘’com.android.support:support-compat:28.0.0’’
+}
+```
