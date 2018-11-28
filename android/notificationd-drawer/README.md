@@ -32,5 +32,5 @@ dependencies {
 
 # Ressource
 For further information about how to implement this features, go the to Android official documentation 
-- [Material design](https://developer.android.com/guide/topics/ui/notifiers/notifications)
-- [Android doc](https://material.io/design/platform-guidance/android-notifications.html)
+- [Material design guidelines](https://developer.android.com/guide/topics/ui/notifiers/notifications) :globe_with_meridians:
+- [Android doc](https://material.io/design/platform-guidance/android-notifications.html) :book: 
