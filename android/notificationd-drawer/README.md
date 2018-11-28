@@ -29,3 +29,8 @@ dependencies {
     implementation ‘’com.android.support:support-compat:28.0.0’’
 }
 ```
+
+# Ressource
+For further information about how to implement this features, go the to Android official documentation 
+- [Material design](https://developer.android.com/guide/topics/ui/notifiers/notifications)
+- [Android doc](https://material.io/design/platform-guidance/android-notifications.html)
