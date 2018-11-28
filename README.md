@@ -26,3 +26,18 @@ Il a été crée dans un unique but à usage personnel, afin de m'entraîner à 
 | View |
 | --------: |
 | NotificationDrawer|
+
+
+# Design pattern
+| View |
+| --------: |
+| Singleton |
+| Observer |
+| Builder |
+| Factory |
+
+# Software Architecture
+| Architecture |
+| --------: |
+| MVP |
+| MVVM |
