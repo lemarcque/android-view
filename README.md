@@ -25,7 +25,7 @@ Il a été crée dans un unique but à usage personnel, afin de m'entraîner à 
 # Android
 | View |
 | --------: |
-| NotificationDrawer|
+| [Notification](https://github.com/lemarcque/software-skills/tree/master/android/notificationd-drawer) |
 
 
 # Design pattern
