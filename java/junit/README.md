@@ -98,6 +98,30 @@ public class CalculatorImpl implements Calculator {
 
 ```
 ## Test 
+Avec JUnit, la plus petite unité de tests est l'assertion dont le résultat de l'expression booléenne indique un succès ou une erreur.
+
+Les cas de tests utilisent des affirmations (assertion en anglais) sous la forme de méthodes nommées assertXXX() proposées par le framework. Il existe de nombreuses méthodes de ce type qui sont héritées de la classe junit.framework.Assert :
+
+
+
+
+| Méthode   |   Rôle |
+| ------------- | ------------- |
+| assertEquals()      | Vérifier l'égalité de deux valeurs de type primitif ou objet (en utilisant la méthode equals()). Il existe de nombreuses surcharges de cette méthode pour chaque type primitif, pour un objet de type Object et pour un objet de type String |
+| assertFalse()       | Vérifier que la valeur fournie en paramètre est fausse|
+| assertNull()      |  Vérifier que l'objet fourni en paramètre soit null |
+| assertNotNull()      | Vérifier que l'objet fourni en paramètre ne soit pas null |
+| assertSame()      | Vérifier que les deux objets fournis en paramètre font référence à la même entité
+
+Exemples identiques :
+
+assertSame("Les deux objets sont identiques", obj1, obj2);
+
+assertTrue("Les deux objets sont identiques ", obj1 == obj2); |
+| assertNotSame()      | Vérifier que les deux objets fournis en paramètre ne font pas référence à la même entité |
+| assertTrue()      | Vérifier que la valeur fournie en paramètre est vraie |
+
+
 Before test : `CalculatorImplTest.java`
 ```java
 class CalculatorImplTest {
