@@ -23,5 +23,105 @@ Etapes (simplifié)
 3. __Vérifier__ que tous les tests passent
 4. __Refactoring__ - Améliorer le code sans altérez le comportement
 
+## Code
+`Calculator.java`
+```java
+package main;
+
+/**
+ * Interface to perform basic arithmetic operation
+ */
+public interface Calculator {
+
+    int multiply(int a , int b);
+    int divide(int a , int b);
+    int add(int a , int b);
+    int subtract(int a , int b);
+}
+
+```
+`CalculatorImpl.java`
+```java
+package main;
+
+/**
+ * Implementation of {@link Calculator}
+ */
+public class CalculatorImpl implements Calculator {
+
+    /**
+     * Multiplication : a * b
+     * @param a product
+     * @param b product
+     * @return
+     */
+    @Override
+    public int multiply(int a, int b) {
+        return 0;
+    }
+
+    /**
+     * Division : a / b
+     * @param a dividend
+     * @param b divider
+     * @return
+     */
+    @Override
+    public int divide(int a, int b) {
+        return 0;
+    }
+
+    /**
+     * Addition : a + b
+     * @param a term
+     * @param b term
+     * @return
+     */
+    @Override
+    public int add(int a, int b) {
+        return 0;
+    }
+
+    /**
+     * Substraction : a - b
+     * @param a diminuende
+     * @param b subtrahend
+     * @return
+     */
+    @Override
+    public int subtract(int a, int b) {
+        return 0;
+    }
+}
+
+
+
+```
+## Test 
+Before test : `CalculatorImplTest.java`
+```java
+class CalculatorImplTest {
+
+    @org.junit.jupiter.api.Test
+    void multiply() {
+        fail("Not yet implemented"); // TODO
+    }
+
+    @org.junit.jupiter.api.Test
+    void divide() {
+        fail("Not yet implemented"); // TODO
+    }
+
+    @org.junit.jupiter.api.Test
+    void add() {
+        fail("Not yet implemented"); // TODO
+    }
+
+    @org.junit.jupiter.api.Test
+    void subtract() {
+        fail("Not yet implemented"); // TODO
+    }
+}
+```
 
 Source : wikipédia / developpez
