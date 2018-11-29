@@ -7,13 +7,13 @@ public class CalculatorImpl implements Calculator {
 
     /**
      * Multiplication : a * b
-     * @param a product
-     * @param b product
-     * @return
+     * @param a factor
+     * @param b factor
+     * @return int the product of the multiplication
      */
     @Override
     public int multiply(int a, int b) {
-        return 0;
+        return a * b;
     }
 
     /**
@@ -24,7 +24,7 @@ public class CalculatorImpl implements Calculator {
      */
     @Override
     public int divide(int a, int b) {
-        return 0;
+        return a / b;
     }
 
     /**
@@ -35,7 +35,7 @@ public class CalculatorImpl implements Calculator {
      */
     @Override
     public int add(int a, int b) {
-        return 0;
+        return a + b;
     }
 
     /**
@@ -46,6 +46,6 @@ public class CalculatorImpl implements Calculator {
      */
     @Override
     public int subtract(int a, int b) {
-        return 0;
+        return a - b;
     }
 }

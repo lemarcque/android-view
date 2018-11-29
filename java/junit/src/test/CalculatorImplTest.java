@@ -1,5 +1,7 @@
 package test;
 
+import main.CalculatorImpl;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -10,21 +12,25 @@ class CalculatorImplTest {
 
     @org.junit.jupiter.api.Test
     void multiply() {
-        fail("Not yet implemented"); // TODO
+        CalculatorImpl calculator = new CalculatorImpl();
+        assertEquals(35, calculator.multiply(5, 7));
     }
 
     @org.junit.jupiter.api.Test
     void divide() {
-        fail("Not yet implemented"); // TODO
+        CalculatorImpl calculator = new CalculatorImpl();
+        assertEquals(5, calculator.divide(10, 2));
     }
 
     @org.junit.jupiter.api.Test
     void add() {
-        fail("Not yet implemented"); // TODO
+        CalculatorImpl calculator = new CalculatorImpl();
+        assertEquals(12, calculator.add(5, 7));
     }
 
     @org.junit.jupiter.api.Test
     void subtract() {
-        fail("Not yet implemented"); // TODO
+        CalculatorImpl calculator = new CalculatorImpl();
+        assertEquals(-2, calculator.subtract(5, 7));
     }
 }
