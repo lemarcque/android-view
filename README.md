@@ -4,15 +4,19 @@ C'est un dépôt listant des des exemple de mise en pratique de concepts de prog
 
 Il a été crée dans un unique but à usage personnel, afin de m'entraîner à mettre en pratique des connaissances théoriques et à pouvoir y revenir lorsque j'en ai besoin. J'ai trouvé utile de le rendre publique à n'importe qui le souhaiterait réutiliser comme base ou ressource.
 
-# Java
 # OOP (Object Oriented Programming)
+Note that all implementation of concept are written in Java.
 
-| Concept |
+| Principles |
 | --------------: |
 | Inheritance |
 | Polymorphism |
 | Abstract & Interface |
 | Generics |
+
+| Theory |
+| --------------: |
+| S.O.L.I.D |
 
 ## Functional
 
@@ -39,5 +43,6 @@ Il a été crée dans un unique but à usage personnel, afin de m'entraîner à 
 # Software Architecture
 | Architecture |
 | --------: |
+| MVC |
 | MVP |
 | MVVM |
