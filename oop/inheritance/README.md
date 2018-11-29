@@ -7,9 +7,9 @@ By declaring a new Class B by inheritance of the class A, we can say that:
 - A is a superclass of B and B is a subclass of A;
 - A is a mother class of B and B is a child class of A;
 
-## UML Scheme
-// todo : add UML scheme
-
+## UML Scheme<
+<center>
+<img src="https://raw.githubusercontent.com/lemarcque/software-skills/master/oop/inheritance/res/uml-inheritance.png" alt="alt text" width="200"></center>
 ## Implementation
 
 Code of the superclass : `A.java`
@@ -61,11 +61,11 @@ public class InheritanceExample {
         System.out.println("Name : " + b.name); // show : " Name : A"
     }
 }
+```
 
 
 Output :
-
-```
+```sh
 Name : A
 Name : A
 ```
