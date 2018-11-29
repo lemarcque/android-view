@@ -57,15 +57,17 @@ public class InheritanceExample {
         // Instantiation of an object from class A
         A b = new B();
 
-        System.out.println("Name : " + a.name);// show : " Name : A"
-        System.out.println("Name : " + b.name);// show : " Name : A"
+        System.out.println("Name : " + a.name); // show : " Name : A"
+        System.out.println("Name : " + b.name); // show : " Name : A"
     }
 }
 
 
 Output :
-```bash
-function () { return "This code is highlighted as Javascript!"}
+
+```
+Name : A
+Name : A
 ```
 
 
