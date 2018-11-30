@@ -7,7 +7,7 @@ By declaring a new Class B by inheritance of the class A, we can say that:
 - A is a superclass of B and B is a subclass of A;
 - A is a mother class of B and B is a child class of A;
 
-## UML Scheme<
+## UML Scheme
 <center>
 <img src="https://raw.githubusercontent.com/lemarcque/software-skills/master/oop/inheritance/res/uml-inheritance.png" alt="alt text" width="200"></center>
 ## Implementation
