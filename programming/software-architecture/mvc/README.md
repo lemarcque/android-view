@@ -1,6 +1,7 @@
 # MVC
 
-```N’essayez pas d’utiliser MVC en tant que modèle de conception structurel unique, mais plutôt en tant que guide pour une bonne architecture d’application, ou un ensemble de modèles de conception pouvant résoudre certains de nos problèmes.
+```
+N’essayez pas d’utiliser MVC en tant que modèle de conception structurel unique, mais plutôt en tant que guide pour une bonne architecture d’application, ou un ensemble de modèles de conception pouvant résoudre certains de nos problèmes.
 ```
 ## Description
 MVC pour _Modèle-Vue-Controller_ est un patron d'architecture logicielle destiné aux interfaces graphiques lancé en 1978 et qui est devenu très populaires pour applications web.
