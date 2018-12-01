@@ -10,7 +10,7 @@ Note that all implementation of concept are written in Java.
 | Principles |
 | --------------: |
 | [Inheritance](https://github.com/lemarcque/software-skills/blob/master/oop/inheritance/README.md) |
-| Encapsulation |
+| [Encapsulation](https://github.com/lemarcque/software-skills/blob/master/oop/encapsulation/README.md) |
 | Polymorphism |
 | Abstract & Interface |
 | Generics |
