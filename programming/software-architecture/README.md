@@ -10,7 +10,7 @@ Ils réalisent tous cette séparation en divisant le logiciel en couches.
 Chacun comporte au moins une couche pour les règles métier et une autre pour les interfaces.
 
 ## Exemple
-- MVC / MVP / MVVM
+- [MVC](https://badootech.badoo.com/do-mvc-like-its-1979-da62304f6568) / MVP / MVVM
 - [Onion Architecture](https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/)
 - Layered Architecture [1]() [2](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
 - Clean Architecture[1](http://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) [2](https://github.com/googlesamples/android-architecture/tree/todo-mvp-clean/) (Meta-Architecture)
