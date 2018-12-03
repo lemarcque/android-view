@@ -45,7 +45,7 @@ Note that all implementation of concept are written in Java.
 | [Architecture](https://github.com/lemarcque/software-skills/tree/master/programming/software-architecture) |
 | --------: |
 | [MVC](https://github.com/lemarcque/software-skills/tree/master/programming/software-architecture/mvc) |
-| [MVP](https://github.com/lemarcque/software-skills/tree/master/programming/software-architecture/mvc)  |
+| [MVP](https://github.com/lemarcque/software-skills/tree/master/programming/software-architecture/mvp)  |
 | MVVM |
 
 # Java
