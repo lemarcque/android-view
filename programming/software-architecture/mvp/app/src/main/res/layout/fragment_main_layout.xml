@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main Fragment -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="50dp">
+
+
+    <!-- Label : Firstname -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Firstname"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/txt_firstname_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your firstname"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Label : Lastname -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lastname"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/txt_lastname_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your lastname"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <!-- Button : Retrieve data -->
+        <Button
+            android:id="@+id/btn_retrieve_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retrieve"/>
+
+        <!-- Button : Update data-->
+        <Button
+            android:id="@+id/btn_update_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+
+        <!-- Button : Clear -->
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"/>
+    </LinearLayout>
+
+
+</LinearLayout>
