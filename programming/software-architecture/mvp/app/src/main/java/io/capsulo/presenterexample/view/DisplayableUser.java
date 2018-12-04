@@ -1,3 +1,7 @@
+/**
+ * @author Henoc Sese (lemarcque)
+ */
+
 package io.capsulo.presenterexample.view;
 
 import android.support.annotation.NonNull;

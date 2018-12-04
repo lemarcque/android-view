@@ -1,3 +1,6 @@
+/**
+ * @author Henoc Sese (lemarcque)
+ */
 package io.capsulo.presenterexample.view;
 
 import android.os.Bundle;
@@ -15,6 +18,10 @@ import io.capsulo.presenterexample.R;
 import io.capsulo.presenterexample.presenter.MainPresenter;
 import io.capsulo.presenterexample.presenter.Presenter;
 
+/**
+ * Represent the View (In MVP)
+ * Implementation of the MainView {@link MainView} object
+ */
 public class MainFragment extends Fragment implements
         io.capsulo.presenterexample.view.MainView, View.OnClickListener{
 
