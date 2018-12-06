@@ -33,6 +33,11 @@ Note that all implementation of concept are written in Java.
 | [Notification](https://github.com/lemarcque/software-skills/tree/master/android/notificationd-drawer) |
 
 
+| Architecture components |
+| --------: |
+| ViewModel |
+| [LiveData](https://github.com/lemarcque/software-skills/tree/master/android/architecture-componenets/livedata) |
+
 # Design pattern
 | View |
 | --------: |
