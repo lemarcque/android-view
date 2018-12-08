@@ -19,12 +19,12 @@ Note that all implementation of concept are written in Java.
 | --------------: |
 | S.O.L.I.D |
 
-## Functional
+## Paradigm 
 
-| Concept |
+| Paradigm |
 | --------------: |
-| - |
-| - |
+| OOP |
+| Functional |
 
 
 # Android
