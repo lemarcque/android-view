@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fragment Main layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context="io.capsulo.activity.ColorFragment"
+    android:orientation="vertical">
+
+
+    <!-- Circle -->
+    <io.capsulo.presentation.view.Shape
+        android:id="@+id/circle_fragment_color"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle"
+        style="@style/shape"/>
+
+    <!-- Rectangle 1 -->
+    <io.capsulo.presentation.view.Shape
+        android:id="@+id/rect1_fragment_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        style="@style/shape"/>
+
+    <!-- Rectangle 2 -->
+    <io.capsulo.presentation.view.Shape
+        android:id="@+id/rect2_fragment_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        style="@style/shape"/>
+</LinearLayout>
