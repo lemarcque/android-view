@@ -9,6 +9,9 @@ Par défault, la liste des modèles contient seulement des modèles pré-défini
 
 By default, the list of templates contains only predefined templates provided by IntelliJ IDEA. Some of them are internal, which means they cannot be deleted or renamed. The names of internal templates are shown in bold. The names of templates that you modified, as well as custom templates that you created manually, are shown in blue.
 
+<img src="https://raw.githubusercontent.com/lemarcque/software-skills/master/programming/ide/code-template/res/code-template-files.png" width="600" />
+
+<img src="https://raw.githubusercontent.com/lemarcque/software-skills/master/programming/ide/code-template/res/code-template-include.png" width="600" />
 
 
 ## Sources
