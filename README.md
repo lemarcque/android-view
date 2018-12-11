@@ -44,7 +44,7 @@ Note that all implementation of concept are written in Java.
 | Singleton |
 | Observer |
 | Builder |
-| Factory |
+| [Factory](https://github.com/lemarcque/software-skills/tree/master/oop/design-pattern/GoF/factory) |
 
 # Software Architecture
 | [Architecture](https://github.com/lemarcque/software-skills/tree/master/programming/software-architecture) |
