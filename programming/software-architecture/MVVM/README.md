@@ -8,10 +8,78 @@ ou un ensemble de modèles de conception pouvant résoudre certains de nos probl
 ## Description
 MVC pour _Modèle-Vue-Controller_ est un patron d'architecture logicielle destiné aux interfaces graphiques lancé en 1978 et qui est devenu très populaires pour applications web.
 
+<img src="https://www.oreilly.com/library/view/learning-javascript-design/9781449334840/httpatomoreillycomsourceoreillyimages1547825.png" />
+
 ### UML
 
 ## Android implementation
 I choose to implement the MVVM model in Android environmenet because i am familiar with it, accompagned with the java languahge.
+
+### View
+A View is represented by a Fragment or Activity.
+```java
+/**
+ * A fragment containing shape.
+ */
+public class ColorFragment extends Fragment {
+
+
+    // Android View
+    private Shape circle;
+    private Shape rectangle1;
+    private Shape rectangle2;
+
+    /**
+     * Static factory methpd that create an new instance of the ColorFragment
+     * @return a ColorFragment object
+     */
+    public static ColorFragment newInstance() {
+        return new ColorFragment();
+    }
+
+    /**
+     * Construct thew view by inflating a XML Layout and displaying it into a ViewGroup
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.color_fragment_layout, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        // binding views
+        circle = view.findViewById(R.id.circle_fragment_color);
+        rectangle1 = view.findViewById(R.id.rect1_fragment_color);
+        rectangle2 = view.findViewById(R.id.rect2_fragment_color);
+
+        // Instantiate ViewModel
+        ColorViewModel colorViewModel = ViewModelProviders
+                .of(this)
+                .get(ColorViewModel.class);
+
+        // Observe changes of the color from the ViewModel
+        // Retrieve data from the ViewModel
+
+        colorViewModel.getColor().observe(this, this::updateColorApp);
+    }
+
+    private void updateColorApp(Color colorApp) {
+        circle.setBackgroundColor(colorApp.toArgb());
+        rectangle1.setBackgroundColor(colorApp.toArgb());
+        rectangle2.setBackgroundColor(colorApp.toArgb());
+    }
+}
+```
+
+### ViewModel
+in Android, The ViewModel class is designed to store and manage UI-related data so that the data survives configuration changes such as screen rotations. — developer.android.com
 
 `ViewModel.java`
 ```java
@@ -79,5 +147,6 @@ public class ColorViewModel extends ViewModel {
 ```
 
 # Sources
-- [Wikipédia] (https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
+- [Wikipédia](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
 - Florina M. - #GDDEurope : https://www.youtube.com/watch?v=Ts-uxYiBEQ8
+- ViewModels under the hood : https://medium.com/google-developer-experts/viewmodels-under-the-hood-f8e286c4cc72
