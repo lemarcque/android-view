@@ -24,7 +24,7 @@ Note that all implementation of concept are written in Java.
 | Paradigm |
 | --------------: |
 | OOP |
-| Functional |
+| [Functional](https://github.com/lemarcque/software-skills/tree/master/programming/paradigms/FP) |
 
 
 # Android
