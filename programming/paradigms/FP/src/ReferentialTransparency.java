@@ -22,44 +22,30 @@
  * SOFTWARE.
  */
 
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDateTime;
 
 /**
- * Sample to show how the
- * The concept of immutability allow to ensures the value of variables from the beginning to the end of an operation.
- * There is no mutable state.
+ * Referential transparency and referential opacity are properties of parts of computer programs.
+ * An expression is called referentially transparent if it can be
  * @author Henoc Sese
  */
-public class Immutability {
+public class ReferentialTransparency {
+
 
     public static void main(String[] args) {
-        new Immutability();
+        new ReferentialTransparency();
     }
 
-    /**
-     * Constructor
-     * By default Array in Java are not mutable so we will use a List and set it mutable.
-     */
-    public Immutability() {
-        // Immutability (without)
-        List<String> names = new ArrayList<>();
-        names.add("John");
-        names.add("Mark");
+    public ReferentialTransparency() {
 
-        names.add("Luke");
-        System.out.println("names => "+ names); // output : John, Marc, Luke
+        // This operation is referentially transparent
+        double n = 10 + 5;
+        double m = 15;
+        double pow = Math.pow(n, m);
 
-        // Immutability
-        List<String> namesList = new ArrayList<>();
-        namesList.add("John");
-        namesList.add("Mark");
-
-        List<String> newNamesList = new ArrayList<>();
-        newNamesList = new ArrayList<>(namesList);
-        newNamesList.add("Matthew");
-
-        System.out.println("namesList => "+ namesList); // output : John, Marc
-        System.out.println("newNamesList => "+ newNamesList); // output : John, Marc, Matthew
+        // This operation is referentially opaque
+        // Explanation :    The value return by the function will not be the same if
+        //                  i run today and then tomorrow
+        LocalDateTime.now();
     }
 }
