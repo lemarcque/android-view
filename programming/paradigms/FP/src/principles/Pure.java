@@ -1,4 +1,4 @@
-/**
+package principles; /**
  * MIT License
  *
  * Copyright (c) 2018 Henoc Sese
@@ -29,7 +29,7 @@ import java.time.LocalDateTime;
  * The method addOne() is an example of a pure function :
  *  - The returned value is always the same for the given argument;
  *  - There is no side effect. The function just apply an expression it does not depend on external environment;
- *  - (Immutability : Take in parameter an argument that doesn't change. That is immutable.)
+ *  - (principles.Immutability : Take in parameter an argument that doesn't change. That is immutable.)
  *
  * The method getSecondTime() is an impure function:
  *  - Even if we give the argument's value in parameter, the return value always change.

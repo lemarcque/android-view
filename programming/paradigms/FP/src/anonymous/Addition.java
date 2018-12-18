@@ -22,27 +22,24 @@
  * SOFTWARE.
  */
 
+package anonymous;
+
 /**
- * Use of Higher-order function
- * A higher-order function  is a function that does at least one of the following:
- * - Takes one or more functions as arguments (i.e. procedural parameters),
- * - Returns a function as its result.
- *
- * @author Henoc Sese
+ * Class that allow doing some computation
  */
-public class HigherOrderFunction {
+public class Addition {
 
-    public static void main(String[] args) {
-        new HigherOrderFunction();
+    /**
+     * To add a one or multiple non overreding-abstract methods
+     * in the interface, the keyowrd 'default' is required
+     * @param n The number to multiply
+     * @return The result of the multiplication of n by five
+     */
+    public int multiplyByFive(int n) {
+        return n * 5;
     }
 
-    public HigherOrderFunction() {
-        // todo
+    public int returnZero() {
+        return 0 + 0;
     }
-
-    public void f() {
-        // todo
-    }
-
 }
-

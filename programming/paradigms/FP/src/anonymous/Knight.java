@@ -22,13 +22,11 @@
  * SOFTWARE.
  */
 
-/**
- * // TODO : Add description
- *
- * // TODO : Add descrition for 'terminal recursity' with tail call
- *
- * @author Henoc Sese
- */
-public class Recursivity {
+package anonymous;
 
+public class Knight implements Fighter {
+    @Override
+    public void fight() {
+        System.out.println("I am a dark knight and i am fighting !");
+    }
 }

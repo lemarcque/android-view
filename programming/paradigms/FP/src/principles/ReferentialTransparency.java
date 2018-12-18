@@ -1,4 +1,4 @@
-/**
+package principles; /**
  * MIT License
  *
  * Copyright (c) 2018 Henoc Sese

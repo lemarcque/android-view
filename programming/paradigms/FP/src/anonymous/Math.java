@@ -21,45 +21,29 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-import java.util.ArrayList;
-import java.util.List;
+package anonymous;
 
 /**
- * Sample to show how the
- * The concept of immutability allow to ensures the value of variables from the beginning to the end of an operation.
- * There is no mutable state.
+ * Set the class as an FunctionalInterface to
+ * force the declaration of one unique asbtract method.
  * @author Henoc Sese
  */
-public class Immutability {
-
-    public static void main(String[] args) {
-        new Immutability();
-    }
+@FunctionalInterface
+public interface Math {
 
     /**
-     * Constructor
-     * By default Array in Java are not mutable so we will use a List and set it mutable.
+     * Perform some operations,
      */
-    public Immutability() {
-        // Immutability (without)
-        List<String> names = new ArrayList<>();
-        names.add("John");
-        names.add("Mark");
+    int compute(int a, int b);
 
-        names.add("Luke");
-        System.out.println("names => "+ names); // output : John, Marc, Luke
 
-        // Immutability
-        List<String> namesList = new ArrayList<>();
-        namesList.add("John");
-        namesList.add("Mark");
-
-        List<String> newNamesList = new ArrayList<>();
-        newNamesList = new ArrayList<>(namesList);
-        newNamesList.add("Matthew");
-
-        System.out.println("namesList => "+ namesList); // output : John, Marc
-        System.out.println("newNamesList => "+ newNamesList); // output : John, Marc, Matthew
+    /**
+     * To add a one or multiple non overreding-abstract methods
+     * in the interface, the keyowrd 'default' is required
+     * @param n The number to multiply
+     * @return The result of the multiplication of n by five
+     */
+     public default int multiplyByFive(int n) {
+         return n * 5;
     }
 }
