@@ -1,4 +1,4 @@
-/* *
+/**
  * MIT License
  *
  * Copyright (c) 2018 Henoc Sese
@@ -22,53 +22,9 @@
  * SOFTWARE.
  */
 
-public class PairInt extends Pair<Integer>{
+/**
+ * TODO : Add description of the class
+ */
+public class  Permute {
 
-
-    public PairInt(int x, int y) {
-        super(x, y);
-    }
-
-    @Override
-    PairInt permute(Integer x, Integer y) {
-        int tmp = x;
-
-        // Immutable object to ensure purity of the function
-        int _x = y;
-        int _y = tmp;
-
-
-        return new PairInt(_x, _y);
-    }
-
-    PairInt permuteXor(Integer x, Integer y) {
-
-        // XOR operand
-        x = x ^ y;
-        y = x ^ y;
-        x = x ^ y;
-
-        return new PairInt(x, y);
-    }
-
-    PairInt permuteAdd(final Integer x, final Integer y) {
-        int _x = x;
-        int _y = y;
-
-        // Addition operand
-        _x = _x + _y;
-        _y = _x - _y;
-        _x = _x - _y;
-
-        return new PairInt(_x, _y);
-    }
-
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
 }

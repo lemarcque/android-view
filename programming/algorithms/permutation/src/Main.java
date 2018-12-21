@@ -39,10 +39,14 @@ public class Main {
         log(permutedPair);
 
         // Permute using XOR methods
-        //Pair xorPermutedPair = ((PairInt) pair).permuteXor(x, y);
-        //log(xorPermutedPair);
+        int a = permutedPair.x;
+        int b = permutedPair.y;
+        Pair xorPermutedPair = ((PairInt) pair).permuteXor(a, b);
+        log(xorPermutedPair);
 
         // Permute using XOR methods
+        int c = xorPermutedPair.x;
+        int d = xorPermutedPair.y;
         Pair addPermutedPair = ((PairInt) pair).permuteAdd(x, y);
         log(addPermutedPair);
     }
