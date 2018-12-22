@@ -23,8 +23,30 @@
  */
 
 /**
- * TODO : Add description of the class
+ * Swap the value of variable
  */
 public class  Permute {
+
+    public static PairInt permuteXor(Integer x, Integer y) {
+
+        // XOR operand
+        x = x ^ y;
+        y = x ^ y;
+        x = x ^ y;
+
+        return new PairInt(x, y);
+    }
+
+    public static PairInt permuteAdd(final Integer x, final Integer y) {
+        int _x = x;
+        int _y = y;
+
+        // Addition operand
+        _x = _x + _y;
+        _y = _x - _y;
+        _x = _x - _y;
+
+        return new PairInt(_x, _y);
+    }
 
 }

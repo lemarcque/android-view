@@ -41,17 +41,15 @@ public class Main {
         // Permute using XOR methods
         int a = permutedPair.x;
         int b = permutedPair.y;
-        Pair xorPermutedPair = ((PairInt) pair).permuteXor(a, b);
+        Pair xorPermutedPair = Permute.permuteXor(a, b);
         log(xorPermutedPair);
 
         // Permute using XOR methods
         int c = xorPermutedPair.x;
         int d = xorPermutedPair.y;
-        Pair addPermutedPair = ((PairInt) pair).permuteAdd(x, y);
+        Pair addPermutedPair = Permute.permuteAdd(x, y);
         log(addPermutedPair);
     }
-
-
 
     public static void log(Pair pair) {
         System.out.println(printLine + " : X = " + pair.x + " / Y = " + pair.y);

@@ -22,6 +22,10 @@
  * SOFTWARE.
  */
 
+/**
+ * Define a couple of number
+ * @param <T>
+ */
 public abstract class Pair<T> {
 
     protected final int x;
