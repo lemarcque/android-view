@@ -70,6 +70,9 @@ public class Main extends Application {
 
         // Algorithms of sorting
         // TODO : Bubble sort
+
+        // TODO : Remove this method call
+        TestEnvironnement env = new TestEnvironnement();
     }
 
 
