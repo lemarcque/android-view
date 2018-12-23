@@ -1,3 +1,5 @@
+import sort.NaiveAlgorithmes;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -54,8 +56,12 @@ public class TestEnvironnement {
         }
 
         System.out.println(set);
-        // Generate a random set
 
         // Testing a naive sorting's algorithm
+        System.out.println(NaiveAlgorithmes.sort(set));
+    }
+
+    private void print(NaiveAlgorithmes func) {
+        System.out.println(func);
     }
 }
