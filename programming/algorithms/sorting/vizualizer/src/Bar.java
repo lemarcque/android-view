@@ -88,4 +88,5 @@ public class Bar extends Group {
     public boolean isOrdered() {
         return ordered;
     }
+
 }

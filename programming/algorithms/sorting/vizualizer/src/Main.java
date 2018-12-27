@@ -68,9 +68,6 @@ public class Main extends Application {
         // List to keyboard event
         keyboardEventManager();
 
-        // Algorithms of sorting
-        // TODO : Bubble sort
-
         // TODO : Remove this method call
         TestEnvironnement env = new TestEnvironnement();
     }
@@ -124,32 +121,62 @@ public class Main extends Application {
      * Make the list in disorder
      */
     private void disorderList() {
-        int minValue = barList.get(0).getValue();
-        int maxValue = barList.get(barList.size() -1 ).getValue();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int minValue = barList.get(0).getValue();
+                int maxValue = barList.get(barList.size() -1 ).getValue();
 
 
-        for(Bar bar : barList) {
+                for(int index = 0; index < barList.size(); index++) {
 
-            // Minimum and Maximum random element
-            final int min = 0;
-            final int max = barList.size();
-            final int randElement = min + (int) (Math.random() * (max - min));
+                    // Minimum and Maximum random element
+                    final int min = 0;
+                    final int max = barList.size();
+                    int randIndex;
 
-            // Get a random bar
-            Bar randomBar = (Bar) root.getChildren().get(randElement);
-            randomBar.setOrdered(false);
+                    do {
+                       randIndex = min + (int) (Math.random() * (max - min));
+                    }while(randIndex == index);
 
-            // Swapping of x position (permutation)
-            int tmpBarX = (int) bar.getLayoutX();
-            bar.setLayoutX(randomBar.getLayoutX());
-            randomBar.setLayoutX(tmpBarX);
+                    // Get a random bar
+                    barList.get(randIndex).setOrdered(false);
+                    barList.get(index).setOrdered(false);
 
-            // Not disorder, if equals to the random bar got
-            // TODO : Surely, this condition will never be satisfied
-            if(bar.getLayoutX() != randElement) {
-                bar.setOrdered(false);
+
+                    // Swapping
+
+                    // Permutation in the List (Collection)
+                    final Bar tempCurrentBar = barList.get(index);
+                    barList.set(index, barList.get(randIndex));
+                    barList.set(randIndex, tempCurrentBar);
+
+                    // Permutation of the X position on the display
+                    final int tmpBarX = (int) barList.get(index).getLayoutX();
+                    barList.get(index).setLayoutX(barList.get(randIndex).getLayoutX());
+                    barList.get(randIndex).setLayoutX(tmpBarX);
+
+                    // Pause the thread
+                    final int animationDelay = 150; //3000
+                    try {
+                        Thread.sleep(animationDelay);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
             }
-        }
+        }).start();
+
+    }
+
+    /**
+     * Testing a variety of sorting's algorithm
+     */
+    private void testSorting() {
+
+        // Bubble Sort
+        BarBubbleSort.sortLive(barList);
     }
 
     /**
@@ -165,8 +192,9 @@ public class Main extends Application {
                     disorderList();
                     break;
                     
-                case ENTER:
+                case S:
                     // order the list with an sorting algorithm's
+                    testSorting();
                     break;
                     
                     default:
