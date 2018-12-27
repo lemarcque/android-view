@@ -11,6 +11,7 @@ La classification des algorithmes de tri est très importante, car elle permet d
 
 ## Tri par comparaison
 ### Algorithmes lents
+- [Tri à bulles](https://fr.wikipedia.org/wiki/Algorithme_de_tri#Tris_par_comparaison)
 ### Algorithmes plus rapides
 ## Tri utilisant les structures de données
 ## Tri externes
