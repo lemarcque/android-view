@@ -14,5 +14,8 @@ By default, the list of templates contains only predefined templates provided by
 <img src="https://raw.githubusercontent.com/lemarcque/software-skills/master/programming/ide/code-template/res/code-template-include.png" width="600" />
 
 
+## How to change
+File templates are managed on the Editor | File and Code Templates page of IntelliJ IDEA settings (⌘),
+
 ## Sources
  - https://www.jetbrains.com/help/idea/using-file-and-code-templates.html
