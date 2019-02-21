@@ -11,7 +11,7 @@ Le modèle-vue-vue modèle (en abrégé MVVM, de l'anglais Model View ViewModel)
 
 Apparu en 20043, MVVM est originaire de Microsoft et adapté pour le développement des applications basées sur les technologies Windows Presentation Foundation et Silverlight4 via l'outil MVVM Light5 par exemple. Cette méthode permet, tel le modèle MVC (modèle-vue-contrôleur), de séparer la vue de la logique et de l'accès aux données en accentuant les principes de binding et d’événement.
 
-<img src="https://www.oreilly.com/library/view/learning-javascript-design/9781449334840/httpatomoreillycomsourceoreillyimages1547825.png" />
+<img src="https://inducesmile.com/wp-content/uploads/2018/06/mvvm.png" />
 
 ### UML
 
