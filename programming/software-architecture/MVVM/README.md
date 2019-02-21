@@ -6,7 +6,10 @@ mais plutôt en tant que guide pour une bonne architecture d’application,
 ou un ensemble de modèles de conception pouvant résoudre certains de nos problèmes.
 ```
 ## Description
-MVC pour _Modèle-Vue-Controller_ est un patron d'architecture logicielle destiné aux interfaces graphiques lancé en 1978 et qui est devenu très populaires pour applications web.
+
+Le modèle-vue-vue modèle (en abrégé MVVM, de l'anglais Model View ViewModel) est une architecture et une méthode de conception utilisée dans le génie logiciel.1,2
+
+Apparu en 20043, MVVM est originaire de Microsoft et adapté pour le développement des applications basées sur les technologies Windows Presentation Foundation et Silverlight4 via l'outil MVVM Light5 par exemple. Cette méthode permet, tel le modèle MVC (modèle-vue-contrôleur), de séparer la vue de la logique et de l'accès aux données en accentuant les principes de binding et d’événement.
 
 <img src="https://www.oreilly.com/library/view/learning-javascript-design/9781449334840/httpatomoreillycomsourceoreillyimages1547825.png" />
 
